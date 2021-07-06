@@ -1,3 +1,5 @@
+console.log("hello");
+
 var http =require('https');
 var express = require('express');
 var i18n = require('./module/i18n');
@@ -35,7 +37,7 @@ app.use(function (req, res, next) {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '8080');
+var port = normalizePort(process.env.PORT || '1801');
 app.set('port', port);
 
 /**

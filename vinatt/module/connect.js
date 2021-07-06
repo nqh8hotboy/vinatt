@@ -7,9 +7,9 @@ var mysql = require("mysql");
 //     charset: 'utf8mb4'
 // };
 var db_config={
-     host: "localhost", //192.168.100.29
+     host: "103.151.241.29", //103.151.241.29
      user: "root",
-     password: "", //chính xác rồi
+     password: "HuyTran@123", //chính xác rồi
      database: "zadmin_vinatttrace",
      charset: 'utf8_vietnamese_ci'
  };
@@ -21,7 +21,7 @@ var connect={
             connection.release();
 			
 			connection.on('error', function (err) {
-                console.log("Loi"+err);
+                console.log("Loi "+err);
 				connection.release();
 			
                 //res.json({"code": 200, "status": "Error", "message": "Error Checking Username Duplicate"});
